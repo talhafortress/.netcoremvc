@@ -1,0 +1,11 @@
+1. Delegeler - işaret ettiği metotlar veya metotun geriye ne döneceğini belirtir;
+  delegate void/string/int MyDelegate(int a, int b);
+  
+    static void main() {
+    MyDelegate a = new MyDelegate(fonksiyon);
+    a+=carp;
+    a.Invoke(param1, param2); // invoke methodu ile delege çalıştırılır.
+    
+    }
+    static void fonksiyon(int x, int y) => Console.WriteLine("$Total: {x +y} " ); // 2 paremetreli fonksiyon
+    static void carp(int x, int y) => Console.WriteLine("Carpım: {x*y} "); 
